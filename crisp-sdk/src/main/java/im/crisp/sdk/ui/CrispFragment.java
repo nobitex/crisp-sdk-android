@@ -187,7 +187,7 @@ public class CrispFragment extends Fragment {
         // Create an image file name
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String imageFileName = "JPEG_" + timeStamp + "_";
-        File storageDir = Environment.getExternalStoragePublicDirectory(
+        File storageDir = Environment.getExternalFilesDir(
                 Environment.DIRECTORY_PICTURES);
         File imageFile = File.createTempFile(
                 imageFileName,  /* prefix */
